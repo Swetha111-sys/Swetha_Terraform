@@ -19,13 +19,13 @@ variable "environment"{
 description = "Development Environment"
 
 type=object ({
-    name=string
-    network_prefix=string
+    name    =string
+    network_prefix  =string
 })
 
 default={
   name = "dev"
-  network_prefex = "10.0"
+  network_prefix = "10.0"
 
 }
 }
