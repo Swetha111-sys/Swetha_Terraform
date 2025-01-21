@@ -20,7 +20,7 @@ description = "Development Environment"
 
 type=object ({
     name=string
-    network_prefix="10.0"
+    network_prefix=string
 })
 
 default={
@@ -30,12 +30,12 @@ default={
 }
 }
 variable "asg_min_size"{
-description=:Minimum number of instances in the ASG"
+description="Minimum number of instances in the ASG"
 default=1
 }
 
 variable "asg_max_size"{
-description=:Maximum number of instances in the ASG"
+description="Maximum number of instances in the ASG"
 default=2
 }
   
